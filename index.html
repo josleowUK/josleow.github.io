@@ -51,7 +51,7 @@
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item mb-2">
           <div class="card h-100">
-            <iframe width='100%' height='245px' src="https://api.mapbox.com/styles/v1/josleow/ckq8gyxwn2lf618sajski9ga3.html?title=false&access_token=pk.eyJ1Ijoiam9zbGVvdyIsImEiOiJja3B1Mjc1eDUwcmZhMnVxdXZicm82OXdmIn0.uVQObdOPYP3dBmMTgof5Jw&zoomwheel=false#13.12/1.36645/103.78079/348.8/1" title="final" style="border:none;"></iframe>
+            <iframe width='100%' class='fit-image' src="https://api.mapbox.com/styles/v1/josleow/ckq8gyxwn2lf618sajski9ga3.html?title=false&access_token=pk.eyJ1Ijoiam9zbGVvdyIsImEiOiJja3B1Mjc1eDUwcmZhMnVxdXZicm82OXdmIn0.uVQObdOPYP3dBmMTgof5Jw&zoomwheel=false#13.12/1.36645/103.78079/348.8/1" title="final" style="border:none;"></iframe>
             <div class="card-body">
               <h4 class="card-title">
                 Project One
@@ -64,7 +64,9 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item mb-2">
           <div class="card h-100">
-            <a href="https://josleowuk.github.io/sg/"><img class="card-img-top" src="images/sg.png" alt="" /></a>
+            <!-- Change a tag to include BS properties to fire and target a modal element. -->
+            <a href="#" data-bs-toggle="modal" data-bs-target="#proj2">
+              <img class="card-img-top fit-image" src="images/sg.png" alt="" /></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="https://josleowuk.github.io/sg/">Project Two</a>
@@ -75,22 +77,41 @@
             </div>
           </div>
         </div>
+        <!-- Modal for above card. Note the id property matches above target. -->
+        <div class="modal fade" id="proj2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">visit Singapore</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="images/proj2.jpg" class="mw-100" alt="Preview of map.">
+                <h5>Visit <a href="#">map</a></h5>
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-sm-6 portfolio-item mb-2">
           <div class="card h-100">
-            <img class="card-img-top" src="images/hex.png" alt="" />
+            <img class="card-img-top fit-image" src="images/hex.png" alt="" />
             <div class="card-body">
               <h4 class="card-title">
                 Project Three
               </h4>
               <p class="card-text">
-                Heatmap on Breweries via QGIS
+                Hexgrid map of Wildfires in Kentucky via QGIS
               </p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item mb-2">
           <div class="card h-100">
-            <a href="https://josleowuk.github.io/places/" target="_blank"><img class="card-img-top" src="images/map672-final.png" alt="" /></a>
+            <a href="https://josleowuk.github.io/places/" target="_blank">
+              <img class="card-img-top fit-image" src="images/map672-final.png" alt="" /></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="https://josleowuk.github.io/places/" target="_blank">Project Four</a>
