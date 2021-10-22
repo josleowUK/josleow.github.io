@@ -64,7 +64,9 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item mb-2">
           <div class="card h-100">
-            <a href="https://josleowuk.github.io/sg/"><img class="card-img-top fit-image" src="images/sg.png" alt="" /></a>
+            <!-- Change a tag to include BS properties to fire and target a modal element. -->
+            <a href="#" data-bs-toggle="modal" data-bs-target="#proj2">
+              <img class="card-img-top fit-image" src="images/sg.png" alt="" /></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="https://josleowuk.github.io/sg/">Project Two</a>
@@ -72,6 +74,24 @@
               <p class="card-text">
                 Singapore information: camera icons with popup images.
               </p>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for above card. Note the id property matches above target. -->
+        <div class="modal fade" id="proj2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">visit Singapore</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="images/proj2.jpg" class="mw-100" alt="Preview of map.">
+                <h5>Visit <a href="#">map</a></h5>
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div> -->
             </div>
           </div>
         </div>
